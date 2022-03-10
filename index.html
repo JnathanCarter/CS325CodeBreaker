@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="script.js"></script>
+		<title>CodeBreaker</title>
+	</head>
+
+	<body>
+		<h1>Welcome to Codebreaker!</h1>
+		<p>
+			(For more information about how to play this game, click
+			<a href="howtoplay.html">here</a>)
+		</p>
+
+		<form name="gameinputform" id="gameinputform">
+			<fieldset>
+				<legend>Enter your guess here..</legend>
+				<span>
+					<label for="groupofdropdowns">What is your guess?</label>
+					<select name="select1" id="select1">
+						<option value="none">(select a color)</option>
+
+						<option value="green">
+							&#x1F7E2</option>
+
+						<option value="blue">
+							&#x1F535
+						</option>
+						<option value="red">&#x1F534</option>
+
+					</select>
+					<select name="select2" id="select2">
+						<option value="none">(select a color)</option>
+						<option value="brown">🟤</option>
+
+					</select>
+					<select name="select3" id="select3">
+						<option value="none">(select a color)</option>
+						<option value="brown">🟤</option>
+					</select>
+					<select name="select4" id="select4">
+						<option value="none">(select a color)</option>
+						<option value="brown">🟤</option>
+					</select>
+				</span>
+
+				<p>
+					<input type="button" value="Submit" onclick="onClick();" />
+				</p>
+			</fieldset>
+		</form>
+
+		<div id="outputtable">
+			<table>
+				<caption style="caption-side: bottom"></caption>
+
+				<form action="select"></form>
+				<tbody>
+					<tr>
+						<th rowspan="2">Row #</th>
+						<th colspan="4">Code Pegs</th>
+						<th rowspan="2">Key Pegs</th>
+					</tr>
+					<tr>
+						<th>1</th>
+						<th>2</th>
+						<th>3</th>
+						<th>4</th>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>🟤</td>
+						<td>🟠</td>
+						<td>🟠</td>
+						<td>🟤</td>
+						<td>⚪⚪</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>🔵</td>
+						<td>🟡</td>
+						<td>🔴</td>
+						<td>🟢</td>
+						<td>⚪⚪</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>🔵</td>
+						<td>🔴</td>
+						<td>🟤</td>
+						<td>🟠</td>
+						<td>⚪⚪⚪</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>🟠</td>
+						<td>🔴</td>
+						<td>🟡</td>
+						<td>🟤</td>
+						<td>⚫⚪</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>🟢</td>
+						<td>🟡</td>
+						<td>🟤</td>
+						<td>🟠</td>
+						<td>⚪⚪⚪</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<p>Click <a href="index.html">here</a> to play again</p>
+	</body>
+
+</html>
